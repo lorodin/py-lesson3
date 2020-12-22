@@ -11,7 +11,7 @@ def f(title, positive_only = False, exit_if_error = True):
         exit()
 
 
-def d(title, positive_only = False, exit_if_error = True, validate_cb = None, error_message = "Invalid value"):
+def i(title, positive_only = False, exit_if_error = True, validate_cb = None, error_message = "Invalid value"):
     try:
         validate_cb = validate_cb if validate_cb is not None else lambda x: x > 0 if positive_only else True
         val = int(input(f"Input {title}: "))

@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     print_user_info(
         name = inputs.s('username', not_empty = True),
-        year = inputs.d(
+        year = inputs.i(
             'year of birth',
             validate_cb = lambda y: 1920 <= y <= now.year,
             error_message = f"Year of birth must be more 1920 and less {now.year}"

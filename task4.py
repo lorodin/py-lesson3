@@ -18,8 +18,8 @@ def custom_pow(x, y):
 
 if __name__ == "__main__":
     print("Input x ** y")
-    x = inputs.d("x", positive_only = True, error_message = "X must be more 0")
-    y = inputs.d(
+    x = inputs.i("x", positive_only = True, error_message = "X must be more 0")
+    y = inputs.i(
         "y",
         validate_cb = lambda v: v < 0,
         error_message = "Y must be less 0"
